@@ -1,6 +1,3 @@
-/*
-	do 
-*/
 package game;
 
 import items.Item;
