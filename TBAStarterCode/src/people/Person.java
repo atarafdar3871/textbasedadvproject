@@ -1,5 +1,5 @@
 package people;
-import items.Item;
+import items.*;
 public abstract class Person {	
 	private int healthPoints; //used for enemies and player during fighting to know when someone is dead or not, can possibly change item drops from enemies based on health
 	private String characterName; //most likely going to be general names like Bat or Goblin or whatever
@@ -28,11 +28,12 @@ public abstract class Person {
 	
 	//needs a isLiving checking the health points
 	
-	public void attackPerson(Person atk, Person def) {
-		// develop weapon items first
+	public void attackPerson(Weapon atk, Person def) {
+		def.healthPoints = def.healthPoints - atk.atkPoints;
 	}
 	
 	 public static void main (String[] args)
+	 	//testing CODE
 	    {
 		 System.out.print(getInventory());
 	    }

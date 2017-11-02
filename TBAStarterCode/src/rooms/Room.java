@@ -1,3 +1,6 @@
+//consider turning into an interface
+
+
 package rooms;
 
 import people.Person;
